@@ -18,6 +18,6 @@ jobs:
 
       - run: git-pr-release-go -help
 
-      - run: git-pr-release-go --from main --to release/production
+      - run: git-pr-release-go --from main --to release/stg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
